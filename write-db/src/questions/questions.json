@@ -1,0 +1,47 @@
+[
+  {
+    "_id": "f4651a18-a998-4f50-b69a-132aa134e467",
+    "question": "Do you like to use software",
+    "answers": {
+      "yes": "Yes",
+      "no": "No",
+      "maybe": "Maybe"
+    }
+  },
+  {
+    "_id": "63113146-7bdd-4f3c-982c-15db4fad4f60",
+    "question": "Do you like sports",
+    "answers": {
+      "yes": "Yes",
+      "no": "No",
+      "maybe": "Maybe"
+    }
+  },
+  {
+    "_id": "1f452bd6-d9ba-4867-8cf5-b03685ebe042",
+    "question": "Do you like dogs",
+    "answers": {
+      "yes": "Yes",
+      "no": "No",
+      "maybe": "Maybe"
+    }
+  },
+  {
+    "_id": "ce562fd7-7454-49d2-a9ea-ea5e2841ca1a",
+    "question": "Do you like to travel",
+    "answers": {
+      "yes": "Yes",
+      "no": "No",
+      "maybe": "Maybe"
+    }
+  },
+  {
+    "_id": "e36dcb51-a77e-4334-a47b-a6d68f2fe72d",
+    "question": "Do you like food",
+    "answers": {
+      "yes": "Yes",
+      "no": "No",
+      "maybe": "Maybe"
+    }
+  }
+]

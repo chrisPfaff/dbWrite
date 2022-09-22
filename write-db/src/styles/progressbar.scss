@@ -1,0 +1,72 @@
+.progress-bar {
+  display: block;
+  border-radius: 10px;
+  position: relative;
+  width: 90%;
+  height: 20px;
+  background-color: white;
+  border: 1px solid black;
+  transition: right;
+  transition-duration: 1.2ms;
+  transition-timing-function: ease-in;
+  &.length1 {
+    &::before {
+      border-radius: 10px;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      content: " ";
+      background-color: red;
+      right: 80%;
+      left: 0px;
+    }
+  }
+  &.length2 {
+    &::before {
+      border-radius: 10px;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      content: " ";
+      background-color: red;
+      right: 60%;
+      left: 0px;
+    }
+  }
+  &.length3 {
+    &::before {
+      border-radius: 10px;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      content: " ";
+      background-color: red;
+      right: 40%;
+      left: 0px;
+    }
+  }
+  &.length4 {
+    &::before {
+      border-radius: 10px;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      content: " ";
+      background-color: red;
+      right: 20%;
+      left: 0px;
+    }
+  }
+  &.length5 {
+    &::before {
+      border-radius: 10px;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      content: " ";
+      background-color: red;
+      right: 0%;
+      left: 0px;
+    }
+  }
+}

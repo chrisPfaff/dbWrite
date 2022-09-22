@@ -1,0 +1,27 @@
+.questions-slide {
+  display: flex;
+  flex-direction: row;
+  height: 80%;
+  padding: 30px;
+  .card {
+    display: none;
+    &.active {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      gap: 18px;
+      background-color: rgb(70, 72, 72);
+      color: white;
+      padding: 20px;
+      border-radius: 10px;
+    }
+    button {
+      all: unset;
+      cursor: pointer;
+      background-color: bisque;
+      padding: 10px;
+      color: black;
+    }
+  }
+}
