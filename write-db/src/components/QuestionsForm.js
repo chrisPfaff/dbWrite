@@ -6,14 +6,13 @@ import React from "react";
 import { useState } from "react";
 
 function QuestionsForm() {
-  const [answers, setAnswers] = useState({});
+  const [answers, setAnswers] = useState([]);
   const [progBarLength, setProgBarLength] = useState(0);
 
-  const handleAnswers = () => {
-    setAnswers((prevState) => {
-      return { ...prevState, answers };
-    });
-  };
+  function handleAnswers(contact, answerArr) {
+    setAnswers([contact, answerArr]);
+    console.log(answers);
+  }
   return (
     <section className="questions-form">
       <ProgressBar progress={progBarLength} />
