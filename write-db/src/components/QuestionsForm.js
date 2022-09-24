@@ -1,9 +1,11 @@
 import "../styles/questionforms.scss";
 
+import { useEffect, useState } from "react";
+
 import ProgressBar from "./ProgressBar";
 import QuestionsSlide from "./QuestionsSlide";
 import React from "react";
-import { useState } from "react";
+import Results from "./Results";
 
 function QuestionsForm() {
   const [answers, setAnswers] = useState([]);
@@ -11,16 +13,23 @@ function QuestionsForm() {
 
   function handleAnswers(contact, answerArr) {
     setAnswers([contact, answerArr]);
-    console.log(answers);
   }
+  useEffect(() => {}, [answers]);
+
   return (
-    <section className="questions-form">
-      <ProgressBar progress={progBarLength} />
-      <QuestionsSlide
-        handleAnswers={handleAnswers}
-        setProgBarLength={setProgBarLength}
-      />
-    </section>
+    <>
+      {answers.length !== 0 ? (
+        <Results answers={answers} />
+      ) : (
+        <section className="questions-form">
+          <ProgressBar progress={progBarLength} />
+          <QuestionsSlide
+            handleAnswers={handleAnswers}
+            setProgBarLength={setProgBarLength}
+          />
+        </section>
+      )}
+    </>
   );
 }
 
